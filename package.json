@@ -9,21 +9,34 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.js": "eslint --cache --fix"
+  },
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.23",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "eslint": "^8.12.0",
-    "eslint-config-standard-with-typescript": "^11.0.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^5.0.0",
+    "eslint-config-standard-with-typescript": "^16.0.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-standard": "^5.0.0",
-    "git-commit-msg-linter": "^4.1.1",
-    "husky": "^7.0.4",
-    "jest": "^27.5.1",
-    "lint-staged": "^12.3.7",
-    "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "git-commit-msg-linter": "^4.0.7",
+    "husky": ">=6",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.3.1",
+    "pinst": "^2.1.6",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "yarn": "^1.22.18",
+    "check-types": "^11.1.2"
   }
 }
